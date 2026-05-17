@@ -1,57 +1,8 @@
 # AI-JINRO-support
 
-1人の人間プレイヤーが最大9人のAIと対戦する人狼ゲームアプリ（Flutter）。  
+1人の人間プレイヤーが最大9人のAIと対戦する人狼ゲームアプリ。  
 Claude / OpenAI / Gemini のAPIキーを設定してプレイできます。  
 6つの役職と3つのAIプロバイダーに対応しています。
-
----
-
-## 必要なもの
-
-| ツール | バージョン |
-|--------|-----------|
-| Flutter SDK | 3.x 以上（確認済み: 3.41.2） |
-| Dart SDK | 3.x 以上（Flutter同梱） |
-| Android Studio / Xcode | エミュレーター or 実機接続用 |
-| AIプロバイダーのAPIキー | Claude / OpenAI / Gemini のいずれか |
-
----
-
-## セットアップ
-
-### 1. リポジトリのクローン
-
-```bash
-git clone <repository-url>
-cd AI_JINRO
-```
-
-### 2. 依存パッケージのインストール
-
-```bash
-flutter pub get
-```
-
-### 3. 起動
-
-**Androidエミュレーターまたは実機で起動（推奨）:**
-
-```bash
-flutter run
-```
-
-接続されているデバイスが複数ある場合はデバイスを選択:
-
-```bash
-flutter devices          # デバイス一覧を確認
-flutter run -d <device-id>
-```
-
-**リリースビルド（実機向け・高速）:**
-
-```bash
-flutter run --release
-```
 
 ---
 
@@ -111,22 +62,3 @@ flutter run --release
 | Gemini | https://aistudio.google.com/app/apikey |
 
 ---
-
-## トラブルシューティング
-
-**`flutter run` でデバイスが見つからない場合:**
-```bash
-flutter doctor    # 環境の問題を確認
-```
-
-**依存関係のエラーが出る場合:**
-```bash
-flutter clean
-flutter pub get
-flutter run
-```
-
-**接続テストでエラーが出る場合:**
-- APIキーのスペルを確認
-- 選択したモデルがプランで利用可能か確認
-- ネットワーク接続を確認
